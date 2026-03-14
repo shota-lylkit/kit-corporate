@@ -173,16 +173,13 @@
             z-index: 1; pointer-events: none;
         }
 
-        /* Two-column hero layout */
+        /* Hero layout — centered single column */
         .hero-inner {
             width: 100%;
-            max-width: 1400px;
+            max-width: 900px;
+            margin: 0 auto;
             position: relative;
             z-index: 2;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0;
-            align-items: center;
         }
 
         .hero-content {}
@@ -198,9 +195,9 @@
         }
 
         .hero-title {
-            font-size: clamp(3rem, 5.5vw, 6rem);
+            font-size: clamp(3.5rem, 7.5vw, 8.5rem);
             font-weight: 900;
-            line-height: 1.08;
+            line-height: 1.06;
             letter-spacing: -0.04em;
             margin-bottom: 48px;
             background: linear-gradient(120deg,
@@ -223,46 +220,6 @@
             font-weight: 400;
             color: rgba(255,255,255,0.5);
             line-height: 1.9;
-        }
-
-        /* Right decorative side */
-        .hero-deco {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding-left: 40px;
-            position: relative;
-        }
-
-        .hero-deco-word {
-            font-family: var(--font-jp);
-            font-size: clamp(6rem, 12vw, 14rem);
-            font-weight: 900;
-            line-height: 1;
-            letter-spacing: -0.05em;
-            background: linear-gradient(135deg,
-                rgba(168,85,247,0.12) 0%,
-                rgba(6,182,212,0.08) 40%,
-                rgba(236,72,153,0.1) 80%
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            user-select: none;
-            text-align: right;
-        }
-
-        .hero-deco-sub {
-            position: absolute;
-            bottom: -20%;
-            right: 0;
-            font-family: var(--font-en);
-            font-size: 0.625rem;
-            font-weight: 600;
-            letter-spacing: 0.25em;
-            text-transform: uppercase;
-            color: rgba(255,255,255,0.12);
-            writing-mode: vertical-rl;
         }
 
         .scroll-hint {
@@ -590,8 +547,6 @@
             .header.scrolled { padding: 14px 36px; }
 
             .hero { padding: 0 36px; }
-            .hero-inner { grid-template-columns: 1fr; }
-            .hero-deco { display: none; }
             .hero-title { font-size: clamp(2.75rem, 8vw, 4.5rem); }
             .scroll-hint { left: 36px; }
 
@@ -655,12 +610,8 @@
         <div class="hero-inner">
             <div class="hero-content">
                 <div class="hero-label reveal">KIT</div>
-                <h1 class="hero-title reveal stagger-1">きっと良くなる、<br>ミライへ。</h1>
-                <p class="hero-sub reveal stagger-2">潜在していたチカラを、<br>新たな可能性へ。</p>
-            </div>
-            <div class="hero-deco reveal stagger-2">
-                <div class="hero-deco-word">ミライ</div>
-                <div class="hero-deco-sub">Childcare × Technology</div>
+                <h1 class="hero-title reveal stagger-1">きっと良くなる、ミライへ。</h1>
+                <p class="hero-sub reveal stagger-2">潜在していたチカラを、新たな可能性へ。</p>
             </div>
         </div>
 
