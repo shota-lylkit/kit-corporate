@@ -88,7 +88,7 @@
             font-weight: 600;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: rgba(60,40,80,0.45);
+            color: var(--gray-400);
             transition: color 0.3s;
         }
 
@@ -196,7 +196,7 @@
             font-weight: 600;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: rgba(100,80,140,0.4);
+            color: var(--gray-400);
             margin-bottom: 48px;
         }
 
@@ -206,25 +206,13 @@
             line-height: 1.06;
             letter-spacing: -0.04em;
             margin-bottom: 48px;
-            background: linear-gradient(120deg,
-                #2d1b4e 0%, #6b3fa0 25%, #3b6db5 55%, #a0467a 80%, #2d1b4e 100%
-            );
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: gradientShift 8s ease-in-out infinite alternate;
-        }
-
-        @keyframes gradientShift {
-            0%   { background-position: 0% 50%; }
-            100% { background-position: 100% 50%; }
+            color: var(--black);
         }
 
         .hero-sub {
             font-size: 1rem;
             font-weight: 400;
-            color: rgba(60,40,80,0.55);
+            color: var(--gray-500);
             line-height: 1.9;
         }
 
@@ -249,7 +237,7 @@
             position: absolute;
             left: -100%; top: 0;
             width: 100%; height: 1px;
-            background: rgba(168,85,247,0.6);
+            background: var(--accent);
             animation: scrollLine 2.5s ease-in-out infinite;
         }
 
@@ -260,7 +248,7 @@
             font-size: 0.5625rem;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: rgba(100,80,140,0.4);
+            color: var(--gray-400);
         }
 
         /* ==========================================
@@ -437,12 +425,12 @@
         }
 
         .contact-section .section-inner { position: relative; z-index: 1; }
-        .contact-section .section-label { color: rgba(100,80,140,0.3); }
+        .contact-section .section-label { color: var(--gray-300); }
         .contact-section .section-heading { color: var(--black); margin-bottom: 16px; }
 
         .contact-sub {
             font-size: 0.9375rem;
-            color: rgba(60,40,80,0.5);
+            color: var(--gray-500);
             margin-bottom: 56px;
         }
 
@@ -458,7 +446,7 @@
         .contact-form textarea {
             background: transparent;
             border: none;
-            border-bottom: 1px solid rgba(100,80,140,0.2);
+            border-bottom: 1px solid var(--gray-200);
             color: var(--black);
             font-family: var(--font-jp);
             font-size: 0.9375rem;
@@ -468,9 +456,9 @@
             width: 100%;
         }
         .contact-form input::placeholder,
-        .contact-form textarea::placeholder { color: rgba(100,80,140,0.3); }
+        .contact-form textarea::placeholder { color: var(--gray-300); }
         .contact-form input:focus,
-        .contact-form textarea:focus { border-bottom-color: rgba(168,85,247,0.6); }
+        .contact-form textarea:focus { border-bottom-color: var(--accent); }
         .contact-form textarea { resize: none; min-height: 120px; }
 
         .btn-contact {
